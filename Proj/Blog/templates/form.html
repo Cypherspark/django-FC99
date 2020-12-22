@@ -1,0 +1,33 @@
+<!-- 
+    label 
+    input | text | password | checkbox | submit
+    select | option
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>  FORM  </title>
+    </head>
+    <body>
+        <h1> Learning Requests </h1>
+        <form action="{% url 'form1'%}" method="POST">
+           <label for="int">your name </label><br>
+           <input type= "text" name="username"></input><br>
+            <label for="password"> password</label><br>
+            <input type= "password" name="password"><br>
+            <input type="submit" value= "send">
+        </form>
+
+        <ul>
+            {% for item in data %}
+       
+            <li>{{ item.username }} : {{item.password}}</li>
+
+       
+            {% endfor %}
+        </ul>
+
+    </body>
+    <script>
+    </script>
+</html>
