@@ -6,7 +6,7 @@
 </div>
 
 ```sh
-$ git clone origin https://github.com/Cypherspark/djnago-FC99.git
+$ git clone https://github.com/Cypherspark/djnago-FC99.git
 $ python -m venv env
 $ env\Scripts\activate
 $ pip install -r requirements.txt
