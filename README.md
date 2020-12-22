@@ -9,8 +9,8 @@
 $ git clone origin https://github.com/Cypherspark/djnago-FC99.git
 $ python -m venv env
 $ env\\Scripts\\activate
+$ pip install -r requirements.txt
 $ cd Proj 
-$ pip install requirements
 $ python manage.py makemigrations
 $ python manage.py migrate
 $ python manage.py runserver
